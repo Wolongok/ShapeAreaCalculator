@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RumusPage">
+
+    <ImageView
+        android:id="@+id/ivGambarBangun"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="240dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Product Image"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvNamaBangun"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/ivGambarBangun"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="24sp"
+        android:text="Product Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Sample Product Name"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:textSize="30dp"
+        android:id="@+id/persegi"
+        android:hint="Masukan sisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamaBangun"
+        android:visibility="visible"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:textSize="30dp"
+        android:id="@+id/lingkaran"
+        android:hint="Masukan jari-jari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamaBangun"
+        android:visibility="gone"
+        android:inputType="number"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/segitiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamaBangun">
+
+        <EditText
+            android:id="@+id/tinggiSegitiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="masukan tinggi"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/segitiga"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/alasSegitiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="masukan alas"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tinggiSegitiga"
+            android:inputType="number"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/persegiPanjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamaBangun">
+
+        <EditText
+            android:id="@+id/panjangPeregi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="masukan tinggi"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/persegiPanjang"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/tinggiPersegi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="masukan lebar"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/panjangPeregi"
+            android:inputType="number"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil : "
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/persegi" />
+    <EditText
+        android:textSize="30dp"
+        android:id="@+id/kubus"
+        android:hint="Masukan sisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamaBangun"
+        android:visibility="gone"
+        android:inputType="number"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/kerucut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamaBangun">
+
+        <EditText
+            android:id="@+id/jariJariKerucut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="masukan jari-jari"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/kerucut"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/tinggiKerucut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="masukan tinggi"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jariJariKerucut"
+            android:inputType="number"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tabung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamaBangun">
+
+        <EditText
+            android:id="@+id/jariJariTabung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="masukan jari-jari"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tabung"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/tinggiTabung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="masukan tinggi"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jariJariTabung"
+            android:inputType="number"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:textSize="30dp"
+        android:id="@+id/bola"
+        android:hint="Masukan jari-jari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamaBangun"
+        android:visibility="gone"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnKalkulasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalkulasi"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hasil" />
+</androidx.constraintlayout.widget.ConstraintLayout>
