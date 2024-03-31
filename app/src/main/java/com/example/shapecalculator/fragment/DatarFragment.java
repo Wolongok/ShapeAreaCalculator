@@ -15,7 +15,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.bumptech.glide.load.model.Model;
 import com.example.shapecalculator.R;
 import com.example.shapecalculator.RumusPage;
 import com.example.shapecalculator.adapter.DatarAdapter;
@@ -72,4 +71,9 @@ public class DatarFragment extends Fragment implements DatarAdapter.ItemClickLis
         startActivity(intent);
 
         Toast.makeText(getContext(), "You clicked " + adapter.getItem(position).getNama() + " on row number " + (position + 1), Toast.LENGTH_SHORT).show();
-    }}
+    }
+
+
+
+}
+
