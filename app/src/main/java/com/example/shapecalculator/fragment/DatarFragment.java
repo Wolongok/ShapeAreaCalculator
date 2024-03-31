@@ -46,7 +46,7 @@ public class DatarFragment extends Fragment implements DatarAdapter.ItemClickLis
 
         modelDatar.add(new BangunModel("Persegi", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Regular_quadrilateral.svg/250px-Regular_quadrilateral.svg.png"));
         modelDatar.add(new BangunModel("Lingkaran", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Circle-withsegments.svg/768px-Circle-withsegments.svg.png"));
-        modelDatar.add(new BangunModel("Segitiga", "https://upload.wikimedia.org/wikipedia/commons/3/35/Enneagram_triangle.png"));
+        modelDatar.add(new BangunModel("Segitiga", "https://drive.usercontent.google.com/u/0/uc?id=12cLjr_YUjgBYI8i9AyefvffSZaegy5LP&export=download"));
         modelDatar.add(new BangunModel("Persegi Panjang", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Rectangle_Geometry_Vector.svg/330px-Rectangle_Geometry_Vector.svg.png"));
 
         View view = inflater.inflate(R.layout.fragment_datar, container, false);

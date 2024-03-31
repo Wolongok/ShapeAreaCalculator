@@ -151,7 +151,7 @@ public class RumusPage extends AppCompatActivity {
 
                 break;
             case "Lingkaran":
-                Glide.with(this).load("https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Circle-withsegments.svg/768px-Circle-withsegments.svg.png").into(ivGambarBangun);
+                Glide.with(this).load("https://drive.usercontent.google.com/u/0/uc?id=1UEUTXNcG9j2uOIrlmmFcRNZD15yjuO-L&export=download").into(ivGambarBangun);
                 persegi.setVisibility(View.GONE);
                 lingkaran.setVisibility(View.VISIBLE);
                 segitiga.setVisibility(View.GONE);
@@ -181,7 +181,7 @@ public class RumusPage extends AppCompatActivity {
                 });
                 break;
             case "Segitiga":
-                Glide.with(this).load("https://upload.wikimedia.org/wikipedia/commons/3/35/Enneagram_triangle.png").into(ivGambarBangun);
+                Glide.with(this).load("https://drive.usercontent.google.com/u/0/uc?id=12cLjr_YUjgBYI8i9AyefvffSZaegy5LP&export=download").into(ivGambarBangun);
                 persegi.setVisibility(View.GONE);
                 lingkaran.setVisibility(View.GONE);
                 segitiga.setVisibility(View.VISIBLE);

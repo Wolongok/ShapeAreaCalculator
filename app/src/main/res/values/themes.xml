@@ -6,4 +6,14 @@
     </style>
 
     <style name="Theme.ShapeCalculator" parent="Base.Theme.ShapeCalculator" />
+
+    <style name="Theme.App" parent="Theme.MaterialComponents">
+        ...
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+    </style>
+    <style name="Theme.BottomNavigationView.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">#F4F2D5</item>
+    </style>
 </resources>

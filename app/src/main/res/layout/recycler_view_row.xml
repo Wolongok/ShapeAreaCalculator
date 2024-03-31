@@ -7,9 +7,10 @@
 
 
     <androidx.cardview.widget.CardView
-        android:backgroundTint="#DADADA"
+        android:backgroundTint="#E4E3CF"
         android:id="@+id/row"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="130dp"
         app:layout_constraintBottom_toBottomOf="parent"

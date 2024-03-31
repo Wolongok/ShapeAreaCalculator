@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:title="2D"
         android:id="@+id/TwoD"
-        android:icon="@drawable/baseline_check_box_outline_blank_24"/>
+        android:icon="@drawable/baseline_check_box_outline_blank_24"
+        android:title="2D"
+        app:itemRippleColor="@color/light_blue" />
+
     <item
-        android:title="3D"
         android:id="@+id/ThreeD"
-        android:icon="@drawable/baseline_square_24"/>
+        android:icon="@drawable/baseline_square_24"
+        android:title="3D"
+        app:itemRippleColor="@color/light_blue" />
+
     <item
-        android:title="Profile"
         android:id="@+id/profile"
-        android:icon="@drawable/baseline_person_24"/>
+        android:icon="@drawable/baseline_person_24"
+        android:title="Profile"
+        app:itemRippleColor="@color/light_blue" />
+
 </menu>

@@ -20,7 +20,7 @@ public class Perhitungan extends RumusPage{
         return 22.0/7.0*jari*(jari+(Math.sqrt(jari*jari+tinggi*tinggi)));
     }
     public double rumusTabung(double jari,double tinggi){
-        return 22.0/7.0*jari*jari + jari * 22.0/7.0*tinggi;
+        return 22.0/7.0*jari*jari*2 + jari * 22.0/7.0*tinggi*2;
     }
     public double rumusBola(double jari){
         return 4*22.0/7.0*jari*jari;
