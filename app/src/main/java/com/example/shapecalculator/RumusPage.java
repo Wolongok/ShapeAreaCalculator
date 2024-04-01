@@ -12,6 +12,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -66,7 +67,19 @@ public class RumusPage extends AppCompatActivity {
     double angka;
 
 
+    @Override
+    public void onBackPressed() {
 
+        int count = getSupportFragmentManager().getBackStackEntryCount();
+
+        if (count == 0) {
+            super.onBackPressed();
+            //additional code
+        } else {
+            getSupportFragmentManager().popBackStack();
+        }
+
+    }
 
 
 
@@ -128,6 +141,19 @@ public class RumusPage extends AppCompatActivity {
         String nama = intent.getStringExtra("nama");
 
         tvNamaBangun.setText(nama);
+
+        ImageView btnQuit;
+
+        btnQuit = findViewById(R.id.btnQuit);
+        btnQuit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                onBackPressed();
+
+            }
+
+        });
 
 
         Perhitungan rumus = new Perhitungan();
@@ -390,4 +416,9 @@ public class RumusPage extends AppCompatActivity {
 
 
     }
+
+
+
+
+
 }

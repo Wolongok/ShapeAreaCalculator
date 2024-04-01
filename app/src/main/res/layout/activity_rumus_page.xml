@@ -6,33 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".RumusPage">
 
+
     <ImageView
 
+        android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:background="@drawable/back_ground"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/ivGambarBangun"
+        android:id="@+id/btnQuit"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@mipmap/ic_launcher"
-        android:layout_width="240dp"
-        android:layout_height="250dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="Product Image"
-        android:paddingTop="10dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="#FAF8DD">
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/ivGambarBangun"
+            app:layout_constraintTop_toTopOf="@id/card"
+            app:layout_constraintStart_toStartOf="@id/card"
+            app:layout_constraintEnd_toEndOf="@id/card"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Product Image"
+            />
+
+    </androidx.cardview.widget.CardView>
+
 
     <TextView
         android:id="@+id/tvNamaBangun"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/ivGambarBangun"
+        app:layout_constraintTop_toBottomOf="@+id/card"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="24sp"
@@ -43,6 +71,7 @@
         android:textStyle="bold"/>
 
     <EditText
+        android:background="@drawable/rounded_corner"
         android:textSize="30dp"
         android:id="@+id/persegi"
         android:hint="Masukan sisi"
@@ -56,6 +85,7 @@
         />
 
     <EditText
+        android:background="@drawable/rounded_corner"
         android:textSize="30dp"
         android:id="@+id/lingkaran"
         android:hint="Masukan jari-jari"
@@ -78,6 +108,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvNamaBangun">
 
         <EditText
+            android:background="@drawable/rounded_corner"
             android:id="@+id/tinggiSegitiga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -89,6 +120,8 @@
             android:inputType="number"/>
 
         <EditText
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corner"
             android:id="@+id/alasSegitiga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -112,6 +145,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvNamaBangun">
 
         <EditText
+            android:background="@drawable/rounded_corner"
             android:id="@+id/panjangPeregi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -123,6 +157,8 @@
             android:inputType="number"/>
 
         <EditText
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corner"
             android:id="@+id/tinggiPersegi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -148,6 +184,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/persegi" />
     <EditText
+        android:background="@drawable/rounded_corner"
         android:textSize="30dp"
         android:id="@+id/kubus"
         android:hint="Masukan sisi"
@@ -169,6 +206,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvNamaBangun">
 
         <EditText
+            android:background="@drawable/rounded_corner"
             android:id="@+id/jariJariKerucut"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -180,6 +218,8 @@
             android:inputType="number"/>
 
         <EditText
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corner"
             android:id="@+id/tinggiKerucut"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -203,6 +243,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvNamaBangun">
 
         <EditText
+            android:background="@drawable/rounded_corner"
             android:id="@+id/jariJariTabung"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -214,6 +255,8 @@
             android:inputType="number"/>
 
         <EditText
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corner"
             android:id="@+id/tinggiTabung"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -227,6 +270,7 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     <EditText
+        android:background="@drawable/rounded_corner"
         android:textSize="30dp"
         android:id="@+id/bola"
         android:hint="Masukan jari-jari"
