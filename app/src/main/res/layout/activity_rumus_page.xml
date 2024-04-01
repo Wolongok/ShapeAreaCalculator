@@ -71,7 +71,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNamaBangun"
         android:visibility="visible"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         />
 
     <EditText
@@ -85,7 +85,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNamaBangun"
         android:visibility="gone"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -107,7 +107,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/segitiga"
-            android:inputType="number"/>
+            android:inputType="numberDecimal"/>
 
         <EditText
             android:layout_marginTop="5dp"
@@ -120,7 +120,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tinggiSegitiga"
-            android:inputType="number"/>
+            android:inputType="numberDecimal"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -144,7 +144,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/persegiPanjang"
-            android:inputType="number"/>
+            android:inputType="numberDecimal"/>
 
         <EditText
             android:layout_marginTop="5dp"
@@ -157,7 +157,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/panjangPeregi"
-            android:inputType="number"/>
+            android:inputType="numberDecimal"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -184,7 +184,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNamaBangun"
         android:visibility="gone"
-        android:inputType="number"/>
+        android:inputType="numberDecimal"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/kerucut"
@@ -205,7 +205,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/kerucut"
-            android:inputType="number"/>
+            android:inputType="numberDecimal"/>
 
         <EditText
             android:layout_marginTop="5dp"
@@ -218,7 +218,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/jariJariKerucut"
-            android:inputType="number"/>
+            android:inputType="numberDecimal"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -242,7 +242,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/tabung"
-            android:inputType="number"/>
+            android:inputType="numberDecimal"/>
 
         <EditText
             android:layout_marginTop="5dp"
@@ -255,7 +255,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/jariJariTabung"
-            android:inputType="number"/>
+            android:inputType="numberDecimal"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -270,7 +270,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNamaBangun"
         android:visibility="gone"
-        android:inputType="number"/>
+        android:inputType="numberDecimal"/>
 
     <Button
         android:backgroundTint="#a7c98f"

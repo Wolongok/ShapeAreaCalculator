@@ -7,7 +7,7 @@
 
 
     <androidx.cardview.widget.CardView
-        android:backgroundTint="#EFEFEF"
+        android:backgroundTint="#e7ebe4"
         android:id="@+id/row"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
