@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_navigation_bar"
-        android:background="#c6c4ab"
+        android:background="#a7c98f"
         app:itemIconSize="32dp"
         app:itemActiveIndicatorStyle="@style/Theme.BottomNavigationView.ActiveIndicator"
         />

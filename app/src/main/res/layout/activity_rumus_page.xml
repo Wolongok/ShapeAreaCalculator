@@ -4,21 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RumusPage">
+    tools:context=".RumusPage"
+    android:background="#e7ebe4">
 
 
-    <ImageView
-
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="@drawable/back_ground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/btnQuit"
@@ -40,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="10dp"
         app:cardCornerRadius="20dp"
-        android:backgroundTint="#FAF8DD">
+        android:backgroundTint="#F4F4F4">
         <ImageView
             android:layout_margin="5dp"
             android:id="@+id/ivGambarBangun"
@@ -58,6 +47,7 @@
 
 
     <TextView
+        android:paddingBottom="30dp"
         android:id="@+id/tvNamaBangun"
         android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@+id/card"
@@ -75,7 +65,7 @@
         android:textSize="30dp"
         android:id="@+id/persegi"
         android:hint="Masukan sisi"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,7 +79,7 @@
         android:textSize="30dp"
         android:id="@+id/lingkaran"
         android:hint="Masukan jari-jari"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,7 +100,7 @@
         <EditText
             android:background="@drawable/rounded_corner"
             android:id="@+id/tinggiSegitiga"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:hint="masukan tinggi"
             android:textSize="30dp"
@@ -123,7 +113,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/rounded_corner"
             android:id="@+id/alasSegitiga"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:hint="masukan alas"
             android:textSize="30dp"
@@ -147,7 +137,7 @@
         <EditText
             android:background="@drawable/rounded_corner"
             android:id="@+id/panjangPeregi"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:hint="masukan tinggi"
             android:textSize="30dp"
@@ -160,7 +150,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/rounded_corner"
             android:id="@+id/tinggiPersegi"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:hint="masukan lebar"
             android:textSize="30dp"
@@ -175,7 +165,7 @@
 
     <TextView
         android:id="@+id/hasil"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Hasil : "
         android:textSize="40dp"
@@ -188,7 +178,7 @@
         android:textSize="30dp"
         android:id="@+id/kubus"
         android:hint="Masukan sisi"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -208,7 +198,7 @@
         <EditText
             android:background="@drawable/rounded_corner"
             android:id="@+id/jariJariKerucut"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:hint="masukan jari-jari"
             android:textSize="30dp"
@@ -221,7 +211,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/rounded_corner"
             android:id="@+id/tinggiKerucut"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:hint="masukan tinggi"
             android:textSize="30dp"
@@ -245,7 +235,7 @@
         <EditText
             android:background="@drawable/rounded_corner"
             android:id="@+id/jariJariTabung"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:hint="masukan jari-jari"
             android:textSize="30dp"
@@ -258,7 +248,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/rounded_corner"
             android:id="@+id/tinggiTabung"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:hint="masukan tinggi"
             android:textSize="30dp"
@@ -274,7 +264,7 @@
         android:textSize="30dp"
         android:id="@+id/bola"
         android:hint="Masukan jari-jari"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -283,7 +273,7 @@
         android:inputType="number"/>
 
     <Button
-        android:backgroundTint="#716C63"
+        android:backgroundTint="#a7c98f"
         android:id="@+id/btnKalkulasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

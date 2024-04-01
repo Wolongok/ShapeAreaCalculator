@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         Window window = getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        int statusBarColor = Color.parseColor("#c6c4ab");
+        int statusBarColor = Color.parseColor("#FFFFFF");
         getWindow().setStatusBarColor(statusBarColor);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {

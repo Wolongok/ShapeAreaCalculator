@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#DAD5BB">
+        android:background="#e7ebe4">
 
         <ImageView
             android:id="@+id/imageView"
@@ -44,7 +44,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <Button
-            android:backgroundTint="#A6A592"
+            android:backgroundTint="#607274"
             android:text="100XP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
             android:layout_marginLeft="60dp"/>
 
         <Button
-            android:backgroundTint="#A6A592"
+            android:backgroundTint="#607274"
             android:text="Logout"
             android:id="@+id/button"
             android:layout_width="wrap_content"
